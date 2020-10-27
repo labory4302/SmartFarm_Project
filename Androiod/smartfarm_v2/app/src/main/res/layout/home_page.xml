@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/test_image_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="247dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ScrollView
+            android:layout_width="156dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="TextView" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/today3"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/today2"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/today3"
+        app:layout_constraintEnd_toStartOf="@+id/today3"
+        app:layout_constraintTop_toTopOf="@+id/today3" />
+
+    <TextView
+        android:id="@+id/today1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/today2"
+        app:layout_constraintEnd_toStartOf="@+id/today2"
+        app:layout_constraintTop_toTopOf="@+id/today2" />
+
+    <TextView
+        android:id="@+id/today4"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/today3"
+        app:layout_constraintStart_toEndOf="@+id/today3"
+        app:layout_constraintTop_toTopOf="@+id/today3" />
+
+    <TextView
+        android:id="@+id/today5"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/today4"
+        app:layout_constraintStart_toEndOf="@+id/today4"
+        app:layout_constraintTop_toTopOf="@+id/today4" />
+
+    <TextView
+        android:id="@+id/today0"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/today1"
+        app:layout_constraintEnd_toStartOf="@+id/today1"
+        app:layout_constraintTop_toTopOf="@+id/today1" />
+
+    <TextView
+        android:id="@+id/today6"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/today5"
+        app:layout_constraintStart_toEndOf="@+id/today5"
+        app:layout_constraintTop_toTopOf="@+id/today5" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/weather0"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/today0"
+        app:layout_constraintTop_toBottomOf="@+id/today0" />
+
+    <TextView
+        android:id="@+id/weather1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/weather0"
+        app:layout_constraintTop_toBottomOf="@+id/today1" />
+
+    <TextView
+        android:id="@+id/weather2"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/weather1"
+        app:layout_constraintTop_toBottomOf="@+id/today2" />
+
+    <TextView
+        android:id="@+id/weather3"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/weather2"
+        app:layout_constraintTop_toBottomOf="@+id/today3" />
+
+    <TextView
+        android:id="@+id/weather4"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/weather3"
+        app:layout_constraintTop_toBottomOf="@+id/today4" />
+
+    <TextView
+        android:id="@+id/weather5"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/weather4"
+        app:layout_constraintTop_toBottomOf="@+id/today5" />
+
+    <TextView
+        android:id="@+id/weather6"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/weather5"
+        app:layout_constraintTop_toBottomOf="@+id/today6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

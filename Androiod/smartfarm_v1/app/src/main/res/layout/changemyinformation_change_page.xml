@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/changemyinformation_change_name"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="30dp"
+        android:background="@color/White"
+        android:fontFamily="@font/my_font"
+        android:hint="Name"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changemyinformation_change_pwd" />
+
+    <EditText
+        android:id="@+id/changemyinformation_change_email"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="30dp"
+        android:background="@color/White"
+        android:fontFamily="@font/my_font"
+        android:hint="Email"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changemyinformation_change_name" />
+
+    <EditText
+        android:id="@+id/changemyinformation_change_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/White"
+        android:fontFamily="@font/my_font"
+        android:hint="NickName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <EditText
+        android:id="@+id/changemyinformation_change_id"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="30dp"
+        android:background="@color/White"
+        android:fontFamily="@font/my_font"
+        android:hint="ID"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changemyinformation_change_nickname" />
+
+    <EditText
+        android:id="@+id/changemyinformation_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="30dp"
+        android:background="@color/White"
+        android:fontFamily="@font/my_font"
+        android:hint="Pwd"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changemyinformation_change_id" />
+
+    <EditText
+        android:id="@+id/changemyinformation_change_location"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="30dp"
+        android:background="@color/White"
+        android:fontFamily="@font/my_font"
+        android:hint="Location"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changemyinformation_change_email" />
+
+    <CheckBox
+        android:id="@+id/autocancel_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:checked="true"
+        android:text="자동로그인"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changemyinformation_change_location" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/White"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/changemyinformation_change_button"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="완료"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_font_bold"
+            android:text="내 정보 수정"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/changemyinformation_change_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.551" />
+
+        <Button
+            android:id="@+id/change_info_change_bt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/point_left_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="별명"
+        app:layout_constraintBottom_toTopOf="@+id/changemyinformation_change_nickname"
+        app:layout_constraintStart_toStartOf="@+id/changemyinformation_change_nickname" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="아이디"
+        app:layout_constraintBottom_toTopOf="@+id/changemyinformation_change_id"
+        app:layout_constraintStart_toStartOf="@+id/changemyinformation_change_id" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="비밀번호"
+        app:layout_constraintBottom_toTopOf="@+id/changemyinformation_change_pwd"
+        app:layout_constraintStart_toStartOf="@+id/changemyinformation_change_pwd" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="이름"
+        app:layout_constraintBottom_toTopOf="@+id/changemyinformation_change_name"
+        app:layout_constraintStart_toStartOf="@+id/changemyinformation_change_name" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="이메일"
+        app:layout_constraintBottom_toTopOf="@+id/changemyinformation_change_email"
+        app:layout_constraintStart_toStartOf="@+id/changemyinformation_change_email" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="거주지역"
+        app:layout_constraintBottom_toTopOf="@+id/changemyinformation_change_location"
+        app:layout_constraintStart_toStartOf="@+id/changemyinformation_change_location" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

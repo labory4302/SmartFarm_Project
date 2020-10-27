@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_weight="1"
+        android:background="@color/White"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout13"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:background="@color/White"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/today0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/weather0"
+            app:layout_constraintStart_toStartOf="@+id/weather0"
+            app:layout_constraintTop_toBottomOf="@+id/weather0" />
+
+        <ImageView
+            android:id="@+id/weather0"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/today1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/weather1"
+            app:layout_constraintStart_toStartOf="@+id/weather1"
+            app:layout_constraintTop_toBottomOf="@+id/weather1" />
+
+        <ImageView
+            android:id="@+id/weather1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/weather2"
+            app:layout_constraintEnd_toStartOf="@+id/weather2"
+            app:layout_constraintTop_toTopOf="@+id/weather2" />
+
+        <ImageView
+            android:id="@+id/weather2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/weather3"
+            app:layout_constraintEnd_toStartOf="@+id/weather3"
+            app:layout_constraintTop_toTopOf="@+id/weather3" />
+
+        <ImageView
+            android:id="@+id/weather3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toEndOf="@+id/today0"
+            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintStart_toStartOf="@+id/today0"
+            app:layout_constraintTop_toBottomOf="@+id/today0" />
+
+        <ImageView
+            android:id="@+id/weather4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/weather3"
+            app:layout_constraintStart_toEndOf="@+id/weather3"
+            app:layout_constraintTop_toTopOf="@+id/weather3" />
+
+        <ImageView
+            android:id="@+id/weather5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/weather4"
+            app:layout_constraintStart_toEndOf="@+id/weather4"
+            app:layout_constraintTop_toTopOf="@+id/weather4" />
+
+        <ImageView
+            android:id="@+id/weather6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/weather5"
+            app:layout_constraintStart_toEndOf="@+id/weather5"
+            app:layout_constraintTop_toTopOf="@+id/weather5" />
+
+        <TextView
+            android:id="@+id/today2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/weather2"
+            app:layout_constraintStart_toStartOf="@+id/weather2"
+            app:layout_constraintTop_toBottomOf="@+id/weather2" />
+
+        <TextView
+            android:id="@+id/today3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/weather3"
+            app:layout_constraintStart_toStartOf="@+id/weather3"
+            app:layout_constraintTop_toBottomOf="@+id/weather3" />
+
+        <TextView
+            android:id="@+id/today4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/weather4"
+            app:layout_constraintStart_toStartOf="@+id/weather4"
+            app:layout_constraintTop_toBottomOf="@+id/weather4" />
+
+        <TextView
+            android:id="@+id/today5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/weather5"
+            app:layout_constraintStart_toStartOf="@+id/weather5"
+            app:layout_constraintTop_toBottomOf="@+id/weather5" />
+
+        <TextView
+            android:id="@+id/today6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/weather6"
+            app:layout_constraintStart_toStartOf="@+id/weather6"
+            app:layout_constraintTop_toBottomOf="@+id/weather6" />
+
+        <TextView
+            android:id="@+id/show_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/my_font_bold"
+            />
+
+        <TextView
+            android:id="@+id/day1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/weather1"
+            app:layout_constraintEnd_toEndOf="@+id/weather1"
+            app:layout_constraintStart_toStartOf="@+id/weather1" />
+
+        <TextView
+            android:id="@+id/day2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/weather2"
+            app:layout_constraintEnd_toEndOf="@+id/weather2"
+            app:layout_constraintStart_toStartOf="@+id/weather2" />
+
+        <TextView
+            android:id="@+id/day3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/weather3"
+            app:layout_constraintEnd_toEndOf="@+id/weather3"
+            app:layout_constraintStart_toStartOf="@+id/weather3" />
+
+        <TextView
+            android:id="@+id/day4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/weather4"
+            app:layout_constraintEnd_toEndOf="@+id/weather4"
+            app:layout_constraintStart_toStartOf="@+id/weather4" />
+
+        <TextView
+            android:id="@+id/day5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/weather5"
+            app:layout_constraintEnd_toEndOf="@+id/weather5"
+            app:layout_constraintStart_toStartOf="@+id/weather5" />
+
+        <TextView
+            android:id="@+id/day6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/weather6"
+            app:layout_constraintEnd_toEndOf="@+id/weather6"
+            app:layout_constraintStart_toStartOf="@+id/weather6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstarintLayout69"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/White"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <TextView
+            android:id="@+id/price_day0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="00000원"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="@+id/dayday0"
+            app:layout_constraintStart_toStartOf="@+id/dayday0"
+            app:layout_constraintTop_toBottomOf="@+id/dayday0" />
+
+        <TextView
+            android:id="@+id/price_day1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="00000원"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="@+id/dayday1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/dayday1"
+            app:layout_constraintTop_toBottomOf="@+id/dayday1" />
+
+        <TextView
+            android:id="@+id/price_day2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="00000원"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="@+id/dayday2"
+            app:layout_constraintStart_toStartOf="@+id/dayday2"
+            app:layout_constraintTop_toBottomOf="@+id/dayday2" />
+
+        <TextView
+            android:id="@+id/price_day3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="00000원"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="@+id/dayday3"
+            app:layout_constraintStart_toStartOf="@+id/dayday3"
+            app:layout_constraintTop_toBottomOf="@+id/dayday3" />
+
+        <TextView
+            android:id="@+id/price_day4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="00000원"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="@+id/dayday4"
+            app:layout_constraintStart_toStartOf="@+id/dayday4"
+            app:layout_constraintTop_toBottomOf="@+id/dayday4" />
+
+        <TextView
+            android:id="@+id/price_day5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="00000원"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="@+id/dayday5"
+            app:layout_constraintStart_toStartOf="@+id/dayday5"
+            app:layout_constraintTop_toBottomOf="@+id/dayday5" />
+
+        <TextView
+            android:id="@+id/price_day6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="00000원"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="@+id/dayday6"
+            app:layout_constraintStart_toStartOf="@+id/dayday6"
+            app:layout_constraintTop_toBottomOf="@+id/dayday6" />
+
+        <TextView
+            android:id="@+id/dayday0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:text="오늘"
+            android:textAlignment="textEnd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+        <TextView
+            android:id="@+id/dayday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="00일"
+            app:layout_constraintStart_toEndOf="@+id/dayday0"
+            app:layout_constraintTop_toTopOf="@+id/dayday0" />
+
+        <TextView
+            android:id="@+id/dayday2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="00일"
+            app:layout_constraintStart_toEndOf="@+id/dayday1"
+            app:layout_constraintTop_toTopOf="@+id/dayday1" />
+
+        <TextView
+            android:id="@+id/dayday3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="00일"
+            app:layout_constraintStart_toEndOf="@+id/dayday2"
+            app:layout_constraintTop_toTopOf="@+id/dayday2" />
+
+        <TextView
+            android:id="@+id/dayday4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="00일"
+            app:layout_constraintStart_toEndOf="@+id/dayday3"
+            app:layout_constraintTop_toTopOf="@+id/dayday3" />
+
+        <TextView
+            android:id="@+id/dayday5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="00일"
+            app:layout_constraintStart_toEndOf="@+id/dayday4"
+            app:layout_constraintTop_toTopOf="@+id/dayday4" />
+
+        <TextView
+            android:id="@+id/dayday6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="00일"
+            app:layout_constraintStart_toEndOf="@+id/dayday5"
+            app:layout_constraintTop_toTopOf="@+id/dayday5" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="소·도매 예상 가격"
+            app:layout_constraintBottom_toBottomOf="@+id/kind"
+            app:layout_constraintStart_toEndOf="@+id/kind"
+            app:layout_constraintTop_toTopOf="@+id/kind"
+            android:fontFamily="@font/my_font_bold"
+            />
+
+        <TextView
+            android:id="@+id/kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="딸기 "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/my_font_bold"
+            />
+
+        <TextView
+            android:id="@+id/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView40"
+            app:layout_constraintStart_toEndOf="@+id/textView40"
+            app:layout_constraintTop_toTopOf="@+id/textView40" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/White"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConstarintLayout69">
+
+        <ImageButton
+            android:id="@+id/cabbage_bt"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:background="@color/White"
+            android:elevation="1dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cabbage_unclick" />
+
+        <ImageButton
+            android:id="@+id/rice_bt"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:background="@color/White"
+            android:elevation="1dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cabbage_bt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rice_unclick" />
+
+        <ImageButton
+            android:id="@+id/beans_bt"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:background="@color/White"
+            android:elevation="1dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rice_bt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/beans_unclick" />
+
+        <ImageButton
+
+            android:id="@+id/chili_bt"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:background="@color/White"
+            android:elevation="1dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/beans_bt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chili_unclick" />
+
+        <ImageButton
+            android:id="@+id/strawberry_bt"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:background="@color/White"
+            android:elevation="1dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chili_bt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/strawberry_unclick" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/White"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="스마트 알림"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:fontFamily="@font/my_font_bold"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

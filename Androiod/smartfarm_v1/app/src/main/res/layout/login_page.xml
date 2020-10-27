@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+>
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="450dp"
+        android:background="@color/White"
+        android:ems="10"
+        android:fontFamily="@font/my_font"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/White"
+        android:ems="10"
+        android:fontFamily="@font/my_font"
+        android:hint="PW"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/login_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login_id"
+        app:layout_constraintTop_toBottomOf="@+id/login_id" />
+
+    <Button
+        android:id="@+id/test_login_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <Button
+        android:id="@+id/Login_Button"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="LOGIN"
+        android:textColor="@color/White"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/login_pwd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login_pwd"
+        app:layout_constraintTop_toBottomOf="@+id/login_pwd" />
+
+    <Button
+        android:id="@+id/Register_Button"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="REGISTER"
+        android:textColor="@color/White"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/Login_Button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Login_Button"
+        app:layout_constraintTop_toBottomOf="@+id/Login_Button" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/login_pwd"
+        app:layout_constraintEnd_toEndOf="@+id/login_pwd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login_pwd"
+        app:layout_constraintTop_toTopOf="@+id/login_pwd"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/lock_icon" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/login_id"
+        app:layout_constraintEnd_toEndOf="@+id/login_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login_id"
+        app:layout_constraintTop_toTopOf="@+id/login_id"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/man_icon" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="271dp"
+        android:layout_height="282dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_icon" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="copyright © 2020 HotSix.All rights reserved"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/Register_Button"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/Register_Button"
+        app:layout_constraintTop_toBottomOf="@+id/Register_Button" />
+
+    <CheckBox
+        android:id="@+id/autoLogin_CheckBox"
+        android:layout_width="90dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="5dp"
+        android:checked="true"
+        android:text="AutoLogin"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/login_id"
+        app:layout_constraintEnd_toEndOf="@+id/login_id"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/login_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

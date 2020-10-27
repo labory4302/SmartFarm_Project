@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/changemyinformation_change_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/changemyinformation_change_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/changemyinformation_change_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NickName" />
+
+    <EditText
+        android:id="@+id/changemyinformation_change_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID" />
+
+    <EditText
+        android:id="@+id/changemyinformation_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pwd" />
+
+    <EditText
+        android:id="@+id/changemyinformation_change_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location" />
+
+    <Button
+        android:id="@+id/changemyinformation_change_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="적용" />
+
+
+
+</LinearLayout>

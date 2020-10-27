@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+    <!-- 모든 경로 허용 -->
+    <base-config cleartextTrafficPermitted="true" />
+
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- HTTP 접근 허용 -->
+        <domain includeSubdomains="true">ec2-54-203-187-33.us-west-2.compute.amazonaws.com</domain>
+        <!-- 날씨 API 주소  -->
+        <domain includeSubdomains="true">freemeteo.kr</domain>
+        <!-- 웹뷰 주소 -->
+        <domain includeSubdomains="true">192.168.0.19</domain>
+
+        <!-- 웹뷰 주소 -->
+        <domain includeSubdomains="true">192.168.0.35</domain>
+
+    </domain-config>
+
+</network-security-config>

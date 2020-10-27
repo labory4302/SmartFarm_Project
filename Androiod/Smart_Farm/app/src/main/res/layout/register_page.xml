@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/regit_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/regit_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/regit_id"
+        app:layout_constraintStart_toStartOf="@+id/regit_id"
+        app:layout_constraintTop_toBottomOf="@+id/regit_id" />
+
+    <ImageButton
+        android:id="@+id/check_id_button"
+        android:layout_width="71dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/regit_id"
+        app:layout_constraintStart_toEndOf="@+id/regit_id"
+        app:layout_constraintTop_toTopOf="@+id/regit_id"
+        app:layout_constraintVertical_bias="0.473"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/regit_password_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/regit_password"
+        app:layout_constraintStart_toStartOf="@+id/regit_password"
+        app:layout_constraintTop_toBottomOf="@+id/regit_password" />
+
+    <ImageButton
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/regit_password_check"
+        app:layout_constraintStart_toStartOf="@+id/regit_password_check"
+        app:layout_constraintTop_toBottomOf="@+id/regit_password_check"
+        app:srcCompat="@drawable/test_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
